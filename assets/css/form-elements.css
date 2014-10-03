@@ -38,7 +38,8 @@ input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder { color
 input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
 
 
-button, 
+button,
+.button-like,
 .contact-form button {
 	height: 52px;
     margin: 0;

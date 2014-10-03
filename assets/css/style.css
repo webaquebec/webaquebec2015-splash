@@ -136,7 +136,7 @@ img { max-width: 100%; }
 	opacity: 1;
 }
 /* Modif sur le btn pour "Achetez vos billets"*/
-.modal-button .btnclean {
+.modal-button a.btn-clean {
 background:#35969A;
 border: none;
 
@@ -165,7 +165,7 @@ margin:8px 0 0 0;
 */
 
 
-.modal-footer button, .modal-button button {
+.modal-footer button, .modal-button button, .modal-button .button-like {
 	height: 52px;
 	margin: 0;
     padding: 0 20px;
@@ -187,10 +187,12 @@ margin:8px 0 0 0;
     -ms-transition: all .3s;
     transition: all .3s;
 }
-.modal-button button:hover, .modal-footer button:hover { opacity: 0.6; background: none; border: 1px solid #fff; color: #35969A; }
-
-.modal-button button:focus, .modal-button button:active:focus, .modal-button button.active:focus { outline: 0; background: none; color: #fff; }
-
+.modal-button button:hover, .modal-footer button:hover {
+  opacity: 0.6; background: none; border: 1px solid #fff; color: #35969A;
+}
+.modal-button button:focus, .modal-button button:active:focus, .modal-button button.active:focus {
+  outline: 0; background: none; color: #fff;
+}
 .modal-footer button:focus, .modal-footer button:active:focus, .modal-footer button.active:focus {
 	outline: 0; background: none; border: 1px solid #fff; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
