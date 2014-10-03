@@ -139,19 +139,19 @@ img { max-width: 100%; }
 .modal-button .btnclean {
 background:#35969A;
 border: none;
-	
+
 }
 .modal-button p span{
 font-weight: bold;
-	
+
 }
 .modal-button {
 	margin-top: 60px;
 }
 .modal-button a{
 	color: #ffffff;
-	
-	
+
+
 }
 /* Pour la grosseur du de la police  */
 .mc-field-group .btn{
@@ -160,7 +160,7 @@ font-weight: bold;
 /*
 .mc-field-group section .btn{
 margin:8px 0 0 0;
-	
+
 }
 */
 
@@ -191,7 +191,7 @@ margin:8px 0 0 0;
 
 .modal-button button:focus, .modal-button button:active:focus, .modal-button button.active:focus { outline: 0; background: none; color: #fff; }
 
-.modal-footer button:focus, .modal-footer button:active:focus, .modal-footer button.active:focus { 
+.modal-footer button:focus, .modal-footer button:active:focus, .modal-footer button.active:focus {
 	outline: 0; background: none; border: 1px solid #fff; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
@@ -449,13 +449,13 @@ nav a:focus { color: #35969a; outline: 0; }
 
 /***** Contact us *****/
 
-.contact-form, 
+.contact-form,
 .contact-address {
 	padding-bottom: 20px;
 	text-align: left;
 }
 
-.contact-form h3, 
+.contact-form h3,
 .contact-address h3 {
 	padding: 0 0 10px 0;
 	font-size: 30px;
@@ -473,7 +473,7 @@ nav a:focus { color: #35969a; outline: 0; }
 	margin: 15px 0 0 0;
 }
 
-.contact-form form input, 
+.contact-form form input,
 .contact-form form textarea {
     width: 95%;
     height: 52px;

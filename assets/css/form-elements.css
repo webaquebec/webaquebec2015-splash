@@ -1,5 +1,5 @@
 
-input[type="text"], 
+input[type="text"],
 textarea {
     margin: 0;
     padding: 0 10px;
@@ -24,7 +24,7 @@ textarea {
     transition: all .3s;
 }
 
-input[type="text"]:focus, 
+input[type="text"]:focus,
 textarea:focus {
 	outline: 0;
     border: 1px solid #fff;
@@ -65,7 +65,7 @@ button,
     transition: all .3s;
 }
 
-button:hover, 
+button:hover,
 .contact-form button:hover {
     opacity: 0.6;
     color: #fff;
@@ -76,7 +76,7 @@ button:hover,
     transition: all .3s;
 }
 
-button:active, 
+button:active,
 .contact-form button:active {
 	outline: 0;
     opacity: 0.6;
@@ -86,7 +86,7 @@ button:active,
     box-shadow: none;
 }
 
-button:focus, 
+button:focus,
 .contact-form button:focus {
 	outline: 0;
 	background: #35969a;
