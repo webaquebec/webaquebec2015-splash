@@ -29,8 +29,8 @@ jQuery(document).ready(function() {
 	$('.hide-menu a').on('click', function(e) {
 		e.preventDefault();
 		$('nav').slideUp(function(){ $('.show-menu a').fadeIn(); });
-	});	
-	
+	});
+
     /*
         Background slideshow
     */
@@ -40,24 +40,24 @@ jQuery(document).ready(function() {
                   "assets/img/backgrounds/3.jpg",
                   "assets/img/backgrounds/4.jpg"
                 ], {duration: 6000, fade: 750});
-    
+
     /*
         Wow
     */
     new WOW().init();
-    
+
     /*
 	    Countdown initializer
 	*/
 	var now = new Date();
-	var countTo = "2015/03/18";   
+	var countTo = "2015/03/18";
 	$('.timer').countdown(countTo, function(event) {
 		$(this).find('.days').text(event.offset.totalDays);
 		$(this).find('.hours').text(event.offset.hours);
 		$(this).find('.minutes').text(event.offset.minutes);
 		$(this).find('.seconds').text(event.offset.seconds);
 	});
-	
+
 	/*
 	    Animate scroll arrows
 	*/
@@ -66,13 +66,13 @@ jQuery(document).ready(function() {
 			$(this).removeClass('animated bounce');
 		});
 	});
-	
+
 	/*
 	    Testimonials
 	*/
 	$('.testimonial-active').html('<p>' + $('.testimonial-single:first p').html() + '</p>');
 	$('.testimonial-single:first .testimonial-single-image img').css('opacity', '1');
-	
+
 	$('.testimonial-single-image img').on('click', function() {
 		$('.testimonial-single-image img').css('opacity', '0.5');
 		$(this).css('opacity', '1');
@@ -82,43 +82,8 @@ jQuery(document).ready(function() {
 			$(this).fadeIn(400);
 		});
 	});
-	
-	/*
-	    Subscription form
-	*/
-	$('.success-message').hide();
-	$('.error-message').hide();
-	
-	$('.subscribe form').submit(function(e) {
-		e.preventDefault();
-	    var postdata = $('.subscribe form').serialize();
-	    $.ajax({
-	        type: 'POST',
-	        url: 'assets/subscribe.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.valid == 0) {
-	                $('.success-message').hide();
-	                $('.error-message').hide();
-	                $('.error-message').html(json.message);
-	                $('.error-message').fadeIn('fast', function(){
-	                	$('.subscribe form').addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-	            			$(this).removeClass('animated shake');
-	            		});
-	                });
-	            }
-	            else {
-	                $('.error-message').hide();
-	                $('.success-message').hide();
-	                $('.subscribe form').hide();
-	                $('.success-message').html(json.message);
-	                $('.success-message').fadeIn();
-	            }
-	        }
-	    });
-	});
-	
+
+
 	/*
 	    Contact form
 	*/
