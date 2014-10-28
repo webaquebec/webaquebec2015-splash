@@ -510,6 +510,11 @@ nav a:focus { color: #35969a; outline: 0; }
 .contact-address a, .contact-address a:focus { color: #fff; }
 .contact-address a:hover { color: #fff; border-bottom: 1px dotted #fff; }
 
+.call-to-paper {
+  display: block;
+  margin: 1em;
+  font-size: 1em;
+}
 
 /***** Footer *****/
 
